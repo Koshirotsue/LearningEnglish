@@ -1,47 +1,47 @@
 package com.example.learningenglish
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.learningenglish.ui.theme.LearningEnglishTheme
+import android.util.Log
+import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
+    private lateinit var btnLearn: Button
+    private lateinit var bthQuiz: Button
+    private lateinit var bntProcess: Button
+    private lateinit var btnAch: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            LearningEnglishTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
-        }
-    }
-}
+        setContentView(R.layout.activity_main)
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+        btnLearn = findViewById(R.id.btnLearn)
+        bthQuiz = findViewById(R.id.bntQuiz)
+        bntProcess = findViewById(R.id.bntProgress)
+        btnAch = findViewById(R.id.bntAch)
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    LearningEnglishTheme {
-        Greeting("Android")
+//       btnLearn.setOnClickListener {
+//            val intent = Intent(this, ::class.java)  Danh sách bài học
+//            startActivity(intent)
+//        }
+
+        //       btnQuiz.setOnClickListener {
+//            val intent = Intent(this, ::class.java)  Câu hỏi
+//            startActivity(intent)
+//        }
+
+        //       btnProcess.setOnClickListener {
+//            val intent = Intent(this, ::class.java)  tiến độ học tập
+//            startActivity(intent)
+//        }
+
+        //       btnAch.setOnClickListener {
+//            val intent = Intent(this, ::class.java)  Thành tựu
+//            startActivity(intent)
+//        }
     }
+
 }

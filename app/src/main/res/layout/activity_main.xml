@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:textSize="36dp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:text="LEARNING ENGHLISH" />
+
+    <Button
+        android:id="@+id/btnLearn"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:text="Danh sách bài học" />
+
+    <Button
+        android:id="@+id/bntQuiz"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:text="Câu hỏi luyện tập" />
+
+    <Button
+        android:id="@+id/bntProgress"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Tiến độ học tập" />
+
+    <Button
+        android:id="@+id/bntAch"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:text="Xem thành tích học tập" />
+
+</LinearLayout>

@@ -3,18 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp">
-
-    <EditText
-        android:id="@+id/edtPhone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Số điện thoại"
-        android:inputType="phone" />
-
-    <Button
-        android:id="@+id/btnSubmit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Gửi yêu cầu" />
+    android:padding="24dp"
+    android:gravity="center_horizontal">  <EditText
+    android:id="@+id/edtEmail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Email"
+    android:inputType="textEmailAddress"
+    android:layout_marginBottom="16dp"/> <Button
+    android:id="@+id/btnSubmit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Gửi yêu cầu" />
 </LinearLayout>

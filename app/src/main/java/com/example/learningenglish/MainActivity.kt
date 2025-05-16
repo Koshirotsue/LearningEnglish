@@ -28,10 +28,10 @@ class MainActivity : AppCompatActivity() {
 //            startActivity(intent)
 //        }
 
-        //       btnQuiz.setOnClickListener {
-//            val intent = Intent(this, ::class.java)  Câu hỏi
-//            startActivity(intent)
-//        }
+        bthQuiz.setOnClickListener {
+            val intent = Intent(this, ExerciseListActivity::class.java)
+            startActivity(intent)
+        }
 
         //       btnProcess.setOnClickListener {
 //            val intent = Intent(this, ::class.java)  tiến độ học tập

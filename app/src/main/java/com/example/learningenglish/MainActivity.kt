@@ -28,7 +28,11 @@ class MainActivity : AppCompatActivity() {
 //            startActivity(intent)
 //        }
 
+<<<<<<< HEAD
         btnQuiz.setOnClickListener {
+=======
+        bthQuiz.setOnClickListener {
+>>>>>>> b34dbb131163c1b51de8ba4f857dab99b6cdcb17
             val intent = Intent(this, ExerciseListActivity::class.java)
             startActivity(intent)
         }

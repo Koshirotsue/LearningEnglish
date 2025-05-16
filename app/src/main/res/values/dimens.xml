@@ -1,3 +1,8 @@
 <resources>
+<<<<<<< HEAD
     <dimen name="fab_margin">16dp</dimen>
 </resources>
+=======
+      <dimen name="fab_margin">16dp</dimen>
+   </resources>
+>>>>>>> b34dbb131163c1b51de8ba4f857dab99b6cdcb17

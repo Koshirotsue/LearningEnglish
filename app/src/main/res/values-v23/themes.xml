@@ -1,8 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+<<<<<<< HEAD
     <style name="Theme.AppCompat.Light" parent="Base.Theme.AppCompat.Light">
         <!-- Transparent system bars for edge-to-edge. -->
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
     </style>
+=======
+  <style name="Theme.AppCompat.Light" parent="Base.Theme.AppCompat.Light">
+    <!-- Transparent system bars for edge-to-edge. -->
+    <item name="android:navigationBarColor">@android:color/transparent</item>
+    <item name="android:statusBarColor">@android:color/transparent</item>
+    <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+  </style>
+>>>>>>> b34dbb131163c1b51de8ba4f857dab99b6cdcb17
 </resources>

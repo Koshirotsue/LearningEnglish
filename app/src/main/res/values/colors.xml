@@ -7,17 +7,20 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
     <color name="colorPrimary">#6A5AE0</color>
     <color name="colorPrimaryDark">#5A4ABD</color>
     <color name="colorAccent">#E91E63</color>
     <color name="pink_label_bg_color">#E91E63</color>
     <color name="hollow_circle_blue">#A0C4FF</color>
-
-
     <color name="correct_answer_color">#4CAF50</color>
     <color name="wrong_answer_color">#F44336</color>
     <color name="explanation_color">#2196F3</color>
+    <color name="login_blue_background">#6A5AE0</color>
+    <color name="register_pink_background">#F48FB1</color>
+    <color name="login_grey_text">#888888</color>
+    <color name="login_red_circle">#E53935</color>
+    <color name="register_dark_pink">#E91E63</color>
+
 </resources>
 
 

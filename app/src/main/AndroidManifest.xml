@@ -38,6 +38,10 @@
         <activity android:name=".ForgetPasswordActivity" />
         <activity android:name=".QuizActivity" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".LearningOptionsActivity" />
+        <activity android:name=".VocabularyActivity" />
+        <activity android:name=".GrammarActivity" />
+
     </application>
 
 </manifest>

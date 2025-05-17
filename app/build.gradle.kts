@@ -42,6 +42,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.cardview)
     val core_version = "1.16.0"
     implementation("androidx.core:core:$core_version")
     implementation("androidx.core:core-ktx:$core_version")
@@ -74,6 +75,9 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation(libs.volley)
     implementation(libs.androidx.appcompat)
+    implementation("com.google.android.material:material:1.11.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
 
 
 }

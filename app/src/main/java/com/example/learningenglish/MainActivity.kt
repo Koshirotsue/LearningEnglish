@@ -10,7 +10,7 @@ import com.google.firebase.database.FirebaseDatabase
 
 class MainActivity : AppCompatActivity() {
     private lateinit var btnLearn: Button
-    private lateinit var btnQuiz: Button
+    private lateinit var bthQuiz: Button
     private lateinit var bntProcess: Button
     private lateinit var btnAch: Button
 
@@ -19,20 +19,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnLearn = findViewById(R.id.btnLearn)
-        btnQuiz = findViewById(R.id.bntQuiz)
-        bntProcess = findViewById(R.id.bntProgress)
+        bthQuiz = findViewById(R.id.bntQuiz)
+//        bntProcess = findViewById(R.id.bntProgress)
         btnAch = findViewById(R.id.bntAch)
 
-//       btnLearn.setOnClickListener {
-//            val intent = Intent(this, ::class.java)  Danh sách bài học
-//            startActivity(intent)
-//        }
+       btnLearn.setOnClickListener {
+            val intent = Intent(this, LearningOptionsActivity::class.java)
+            startActivity(intent)
+        }
 
-<<<<<<< HEAD
-        btnQuiz.setOnClickListener {
-=======
         bthQuiz.setOnClickListener {
->>>>>>> b34dbb131163c1b51de8ba4f857dab99b6cdcb17
             val intent = Intent(this, ExerciseListActivity::class.java)
             startActivity(intent)
         }

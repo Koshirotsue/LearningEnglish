@@ -1,145 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout
-
     xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
-
     android:layout_height="match_parent"
-
     android:background="@color/white" >
 
-
-
     <View
-
         android:id="@+id/header_background_shape"
-
-        android:layout_width="0dp"
-
-        android:layout_height="150dp"
-
+        android:layout_width="413dp"
+        android:layout_height="240dp"
         android:background="@color/colorPrimary"
-
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toTopOf="parent" />
 
-
-
     <TextView
-
-        android:id="@+id/textView"
-
-        android:layout_width="0dp" android:layout_height="wrap_content"
-
-        android:layout_marginTop="40dp"
-
-        android:layout_marginStart="24dp" android:layout_marginEnd="24dp" android:textSize="24sp"
-
+        android:id="@+id/lesson_type_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="24dp"
         android:fontFamily="sans-serif-medium"
-
-        android:textStyle="bold"
-
-        android:text="LEARNING ENGLISH"
-
+        android:gravity="center_horizontal"
+        android:text="Chọn loại bài học"
         android:textColor="@color/white"
-
-        android:gravity="center_horizontal" app:layout_constraintStart_toStartOf="parent"
-
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/header_background_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
-        app:layout_constraintEnd_toEndOf="parent"/>
-
+        app:layout_constraintVertical_bias="0.1" />
 
     <Button
-
-        android:id="@+id/btnLearn"
-
+        android:id="@+id/btnVocabulary"
         android:layout_width="0dp"
-
         android:layout_height="wrap_content"
-
         android:layout_marginStart="32dp"
-
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="108dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_state_bg"
-
         android:elevation="8dp"
-        android:text="Danh sách bài học"
+        android:text="Vocabulary"
         android:textColor="@color/white"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintHorizontal_bias="0.0"
-
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header_background_shape" />
 
     <Button
-
-        android:id="@+id/bntQuiz"
-
+        android:id="@+id/btnGrammar"
         android:layout_width="0dp"
-
         android:layout_height="wrap_content"
-
-        android:layout_marginStart="32dp"
-
-        android:layout_marginTop="100dp"
-
+        android:layout_marginTop="16dp" android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-
-        android:background="@drawable/button_state_bg"
-
-        android:elevation="8dp"
-
-        android:text="Câu hỏi luyện tập"
-
+        android:text="Grammar"
         android:textColor="@color/white"
-
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintHorizontal_bias="1.0"
-
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/btnLearn" />
+        android:background="@drawable/button_state_bg"
+        android:elevation="8dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnVocabulary" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-
-        android:id="@+id/bntAch"
-
+        android:id="@+id/btnPronunciation"
         android:layout_width="0dp"
-
         android:layout_height="wrap_content"
-
-        android:layout_marginStart="32dp"
-
-        android:layout_marginTop="100dp"
-
+        android:layout_marginTop="16dp" android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-
-        android:background="@drawable/button_state_bg"
-
-        android:elevation="8dp"
-
-        android:text="Xem thành tích học tập"
-
+        android:text="Pronunciation"
         android:textColor="@color/white"
-
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintHorizontal_bias="0.0"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bntQuiz" />
+        android:background="@drawable/button_state_bg"
+        android:elevation="8dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnGrammar" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
